@@ -130,6 +130,7 @@ function App() {
             githubUrl="https://github.com/SAKAGAWA0401"
             linkedinUrl="https://linkedin.com/in/ryota-sakagawa"
             salesforceUrl="https://www.salesforce.com/trailblazer/rsakagawa"
+            twitterUrl="https://twitter.com/condevops"
         />
         <motion.a
           href="https://zenn.dev/rts0401"
