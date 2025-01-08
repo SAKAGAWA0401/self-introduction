@@ -6,7 +6,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   background: linear-gradient(45deg, #0a1128, #1c2541, #3a506b);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
