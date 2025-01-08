@@ -4,7 +4,7 @@ import Portfolio from './pages/Portfolio';
 
 function App() {
   return (
-    <Router basename="/self-introduction">
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/portfolio" element={<Portfolio />} />
