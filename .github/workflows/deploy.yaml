@@ -1,4 +1,4 @@
-name: Deploy to Staging or Production
+name: Deploy to Production
 
 on:
   workflow_dispatch:
@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -25,20 +25,10 @@ jobs:
       - name: Build project
         run: npm run build
 
-      # ステージング環境の場合のみ robots.txt をコピー
-      - name: Copy robots.txt for staging
-        if: github.repository == 'sakagawa0401/self-introduction-staging'
-        run: cp robots.txt ./dist/robots.txt
-
-      # 本番環境の場合のみ robots.txt を削除
-      - name: Remove robots.txt for production
-        if: github.repository == 'sakagawa0401/self-introduction'
-        run: rm -f ./dist/robots.txt
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: gh-pages
-          cname: ${{ github.repository == 'sakagawa0401/self-introduction-staging' && 'staging.sloperiver.com' || 'sloperiver.com' }}
+          cname: sloperiver.com
