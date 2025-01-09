@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import { Link } from 'react-router-dom';
 import { SocialLinks } from '../components/social/SocialLinks';
 import { motion } from 'framer-motion';
 
@@ -140,14 +141,13 @@ export function Home() {
         >
           Visit my Tech-Blog
         </motion.a>        
-        <motion.a
-          href="/portfolio"
+        <motion.div
           className="inline-block px-6 py-3 bg-white text-blue-900 rounded-full font-semibold hover:bg-blue-100 transition-colors cursor-glow"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          Check out my Portfolio
-        </motion.a>
+          <Link to="/portfolio">Check out my Portfolio</Link>
+        </motion.div>
       </footer>
     </div>
   );
