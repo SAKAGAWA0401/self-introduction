@@ -125,8 +125,7 @@ export function Home() {
           <li className="floating" style={{ animationDelay: '0.2s' }}>Fullstack Engineer (Individual Development)</li>
         </motion.ul>
       </main>
-
-      <footer className="mt-16 space-x-8 z-10">
+      <div className="mt-16 space-x-8 z-10">
         <SocialLinks
             githubUrl="https://github.com/SAKAGAWA0401"
             linkedinUrl="https://linkedin.com/in/ryota-sakagawa"
@@ -148,7 +147,7 @@ export function Home() {
         >
           <Link to="/portfolio">Check out my Portfolio</Link>
         </motion.div>
-      </footer>
+      </div>
     </div>
   );
 }
