@@ -149,7 +149,7 @@ const Portfolio = () => {
               <div className="flex flex-col md:flex-row gap-4 items-center">
                 <div className="w-full md:w-1/3">
                   <img 
-                    src="https://placehold.co/400x200" 
+                    src="screenshot\screenshot-myglish.sloperiver.com-1280x720.png" 
                     alt="myglish - remember words" 
                     className="rounded-lg cursor-pointer"
                     onClick={() => window.open('https://myglish.sloperiver.com', '_blank')}
@@ -173,7 +173,7 @@ const Portfolio = () => {
                 </div>
                 <div className="w-full md:w-2/3">
                   <span className="bg-blue-500/20 px-3 py-1 rounded-full text-sm">React</span>
-                  <span className="bg-purple-500/20 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                  <span className="bg-purple-500/20 px-3 py-1 rounded-full text-sm">JavaScript</span>
                   <span className="bg-green-500/20 px-3 py-1 rounded-full text-sm">TailwindCSS</span>
                   <span className="bg-green-500/20 px-3 py-1 rounded-full text-sm">shadcn/ui</span>
                   <span className="bg-gray-500/20 px-3 py-1 rounded-full text-sm">Node.js</span>
