@@ -51,6 +51,7 @@ const Portfolio = () => {
                   <span className="bg-blue-500/20 px-3 py-1 rounded-full text-sm">React</span>
                   <span className="bg-purple-500/20 px-3 py-1 rounded-full text-sm">TypeScript</span>
                   <span className="bg-green-500/20 px-3 py-1 rounded-full text-sm">TailwindCSS</span>
+                  <span className="bg-green-500/20 px-3 py-1 rounded-full text-sm">FramerMotion</span>
                 </div>
               </div>
               <div className="flex flex-col md:flex-row gap-4 items-center">
